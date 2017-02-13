@@ -297,12 +297,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            <dependency>
-                <groupId>org.wso2.iot</groupId>
-                <artifactId>org.wso2.carbon.iot.core.integration.ui.pages</artifactId>
-                <version>${product.iot.version}</version>
-                <scope>test</scope>
-            </dependency>
 
             <!--Carbon Kernel Dependencies-->
             <dependency>
@@ -1012,6 +1006,17 @@
                 <artifactId>org.wso2.iot.core.admin.styles</artifactId>
                 <version>${product.iot.version}</version>
             </dependency>
+            <!--mobile-qsg dependencies-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>${apache.httpmime.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${apache.httpclient.version}</version>
+            </dependency>
 
             <!-- *********************************  Analytics Distribution Features START ********************************* -->
 
@@ -1643,7 +1648,7 @@
         <caramel.version>1.0.1</caramel.version>
 
         <!-- App manager version-->
-        <appmgt.feature.version>1.2.14</appmgt.feature.version>
+        <appmgt.feature.version>1.2.15</appmgt.feature.version>
 
         <!-- Carbon Store version-->
         <carbon.store.version>1.4.4</carbon.store.version>
@@ -1677,6 +1682,8 @@
 
         <!-- CDMF Analytics -->
         <cdmf.analytics.version>1.0.4-SNAPSHOT</cdmf.analytics.version>
+        <apache.httpmime.version>4.2.5</apache.httpmime.version>
+        <apache.httpclient.version>4.5.2</apache.httpclient.version>
     </properties>
 
     <scm>
